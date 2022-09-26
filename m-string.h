@@ -154,7 +154,7 @@ extern "C" {
 #endif
 bool m_str1ng_stack_p(const m_string_t s);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Internal method to set the size of the string */
@@ -163,7 +163,7 @@ extern "C" {
 #endif
 void m_str1ng_set_size(m_string_t s, size_t size);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Return the number of characters of the string */
@@ -172,7 +172,7 @@ extern "C" {
 #endif
 size_t m_string_size(const m_string_t s);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Return the capacity of the string */
@@ -181,7 +181,7 @@ extern "C" {
 #endif
 size_t m_string_capacity(const m_string_t s);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Return a writable pointer to the array of char of the string */
@@ -190,7 +190,7 @@ extern "C" {
 #endif
 char* m_str1ng_get_cstr(m_string_t v);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Return the string view a classic C string (const char *) */
@@ -199,7 +199,7 @@ extern "C" {
 #endif
 const char* m_string_get_cstr(const m_string_t v);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Initialize the dynamic string (constructor) 
@@ -209,7 +209,7 @@ extern "C" {
 #endif
 void m_string_init(m_string_t s);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Clear the Dynamic string (destructor) */
@@ -218,7 +218,7 @@ extern "C" {
 #endif
 void m_string_clear(m_string_t v);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* NOTE: Internaly used by M_STRING_DECL_INIT */
@@ -234,7 +234,7 @@ extern "C" {
 #endif
 char * m_string_clear_get_cstr(m_string_t v);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Make the string empty */
@@ -243,7 +243,7 @@ extern "C" {
 #endif
 void m_string_reset(m_string_t v);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Return the selected byte-character of the string */
@@ -252,7 +252,7 @@ extern "C" {
 #endif
 char m_string_get_char(const m_string_t v, size_t index);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Set the selected byte-character of the string */
@@ -261,7 +261,7 @@ extern "C" {
 #endif
 void m_string_set_char(m_string_t v, size_t index, const char c);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Test if the string is empty or not */
@@ -270,7 +270,7 @@ extern "C" {
 #endif
 bool m_string_empty_p(const m_string_t v);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Internal method to fit the string to the given size
@@ -284,7 +284,7 @@ extern "C" {
 #endif
 char * m_str1ng_fit2size (m_string_t v, size_t size_alloc);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Modify the string capacity to be able to handle at least 'alloc'
@@ -295,7 +295,7 @@ extern "C" {
 #endif
 void m_string_reserve(m_string_t v, size_t alloc);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Set the string to the C string str */
@@ -304,7 +304,7 @@ extern "C" {
 #endif
 void m_string_set_cstr(m_string_t v, const char str[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Set the string to the n first characters of the C string str */
@@ -313,7 +313,7 @@ extern "C" {
 #endif
 void m_string_set_cstrn(m_string_t v, const char str[], size_t n);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Set the string to the other one */
@@ -322,7 +322,7 @@ extern "C" {
 #endif
 void m_string_set (m_string_t v1, const m_string_t v2);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Set the string to the n first characters of other one */
@@ -331,7 +331,7 @@ extern "C" {
 #endif
 void m_string_set_n(m_string_t v, const m_string_t ref, size_t offset, size_t length);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Initialize the string and set it to the other one 
@@ -341,7 +341,7 @@ extern "C" {
 #endif
 void m_string_init_set(m_string_t v1, const m_string_t v2);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Initialize the string and set it to the C string
@@ -351,7 +351,7 @@ extern "C" {
 #endif
 void m_string_init_set_cstr(m_string_t v1, const char str[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Initialize the string, set it to the other one,
@@ -362,7 +362,7 @@ extern "C" {
 #endif
 void m_string_init_move(m_string_t v1, m_string_t v2);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Swap the two strings v1 and v2 */
@@ -371,7 +371,7 @@ extern "C" {
 #endif
 void m_string_swap(m_string_t v1, m_string_t v2);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Set the string to the other one,
@@ -382,7 +382,7 @@ extern "C" {
 #endif
 void m_string_move(m_string_t v1, m_string_t v2);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Push the byte-character 'c' in the string 'v' */
@@ -391,7 +391,7 @@ extern "C" {
 #endif
 void m_string_push_back (m_string_t v, char c);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Concatene the string with the C string */
@@ -400,7 +400,7 @@ extern "C" {
 #endif
 void m_string_cat_cstr(m_string_t v, const char str[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Concatene the string with the other string */
@@ -409,7 +409,7 @@ extern "C" {
 #endif
 void m_string_cat(m_string_t v, const m_string_t v2);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Compare the string to the C string and
@@ -419,7 +419,7 @@ extern "C" {
 #endif
 int m_string_cmp_cstr(const m_string_t v1, const char str[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Compare the string to the other string and
@@ -429,7 +429,7 @@ extern "C" {
 #endif
 int m_string_cmp(const m_string_t v1, const m_string_t v2);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Test if the string is equal to the given C string */
@@ -438,7 +438,7 @@ extern "C" {
 #endif
 bool m_string_equal_cstr_p(const m_string_t v1, const char str[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Test if the string is equal to the other string */
@@ -447,7 +447,7 @@ extern "C" {
 #endif
 bool m_string_equal_p(const m_string_t v1, const m_string_t v2);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Test if the string is equal to the C string 
@@ -459,7 +459,7 @@ extern "C" {
 #endif
 int m_string_cmpi_cstr(const m_string_t v1, const char p2[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Test if the string is equal to the other string 
@@ -471,7 +471,7 @@ extern "C" {
 #endif
 int m_string_cmpi(const m_string_t v1, const m_string_t v2);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Search for the position of the character c
@@ -484,7 +484,7 @@ extern "C" {
 #endif
 size_t m_string_search_char (const m_string_t v, char c, size_t start);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Reverse Search for the position of the character c
@@ -497,7 +497,7 @@ extern "C" {
 #endif
 size_t m_string_search_rchar (const m_string_t v, char c, size_t start);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Search for the sub C string in the string from the position start
@@ -508,7 +508,7 @@ extern "C" {
 #endif
 size_t m_string_search_cstr(const m_string_t v, const char str[], size_t start);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Search for the sub other string v2 in the string v1 from the position start
@@ -519,7 +519,7 @@ extern "C" {
 #endif
 size_t m_string_search (const m_string_t v1, const m_string_t v2, size_t start);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Search for the first matching character in the given C string 
@@ -531,7 +531,7 @@ extern "C" {
 #endif
 size_t m_string_search_pbrk(const m_string_t v1, const char first_of[], size_t start);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Compare the string to the C string using strcoll */
@@ -540,7 +540,7 @@ extern "C" {
 #endif
 int m_string_strcoll_cstr(const m_string_t v, const char str[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Compare the string to the other string using strcoll */
@@ -549,7 +549,7 @@ extern "C" {
 #endif
 int m_string_strcoll (const m_string_t v1, const m_string_t v2);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Return the number of bytes of the segment of s
@@ -559,7 +559,7 @@ extern "C" {
 #endif
 size_t m_string_spn(const m_string_t v1, const char accept[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Return the number of bytes of the segment of s
@@ -569,7 +569,7 @@ extern "C" {
 #endif
 size_t m_string_cspn(const m_string_t v1, const char reject[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Return the string left truncated to the first 'index' bytes */
@@ -578,7 +578,7 @@ extern "C" {
 #endif
 void m_string_left(m_string_t v, size_t index);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Return the string right truncated from the 'index' position to the last position */
@@ -587,7 +587,7 @@ extern "C" {
 #endif
 void m_string_right(m_string_t v, size_t index);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Return the string from position index to size bytes.
@@ -598,7 +598,7 @@ extern "C" {
 #endif
 void m_string_mid (m_string_t v, size_t index, size_t size);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Replace in the string the firt occurence of the C string str1
@@ -610,7 +610,7 @@ extern "C" {
 #endif
 size_t m_string_replace_cstr (m_string_t v, const char str1[], const char str2[], size_t start);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Replace in the string the firt occurence of the C string v1
@@ -622,7 +622,7 @@ extern "C" {
 #endif
 size_t m_string_replace (m_string_t v, const m_string_t v1, const m_string_t v2, size_t start);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Replace in the string the sub-string at position 'pos' for 'len' bytes
@@ -632,7 +632,7 @@ extern "C" {
 #endif
 void m_string_replace_at (m_string_t v, size_t pos, size_t len, const char str2[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Replace all occurences of str1 into str2 when strlen(str1) >= strlen(str2) */
@@ -641,7 +641,7 @@ extern "C" {
 #endif
 void m_str1ng_replace_all_cstr_1ge2 (m_string_t v, const char str1[], size_t str1len, const char str2[], size_t str2len);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Reverse strstr from the end of the string
@@ -654,7 +654,7 @@ extern "C" {
 #endif
 char * m_str1ng_strstr_r(char org[], char src[], const char pattern[], size_t pattern_size);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Replace all occurences of str1 into str2 when strlen(str1) < strlen(str2) */
@@ -663,7 +663,7 @@ extern "C" {
 #endif
 void m_str1ng_replace_all_cstr_1lo2 (m_string_t v, const char str1[], size_t str1len, const char str2[], size_t str2len);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 #ifdef __cplusplus
@@ -671,7 +671,7 @@ extern "C" {
 #endif
 void m_string_replace_all_cstr (m_string_t v, const char str1[], const char str2[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 #ifdef __cplusplus
@@ -679,7 +679,7 @@ extern "C" {
 #endif
 void m_string_replace_all (m_string_t v, const m_string_t str1, const m_string_t str2);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 // Define the fast integer to string conversions if requested
@@ -690,7 +690,7 @@ extern "C" {
 #endif
 void m_string_set_ui(m_string_t v, unsigned int n);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 #ifdef __cplusplus
@@ -698,7 +698,7 @@ extern "C" {
 #endif
 void m_string_set_si(m_string_t v, int n);
 #ifdef __cplusplus
-} 
+}
 #endif
 #endif
 
@@ -710,7 +710,7 @@ extern "C" {
 #endif
 int m_string_vprintf (m_string_t v, const char format[], va_list args);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Format in the string the given printf format */
@@ -719,7 +719,7 @@ extern "C" {
 #endif
 int m_string_printf (m_string_t v, const char format[], ...);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Append to the string the formatted string of the given printf format */
@@ -728,7 +728,7 @@ extern "C" {
 #endif
 int m_string_cat_printf (m_string_t v, const char format[], ...);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 #if M_USE_FAST_STRING_CONV == 0
@@ -754,7 +754,7 @@ extern "C" {
 #endif
 bool m_string_fgets(m_string_t v, FILE *f, m_string_fgets_t arg);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Get a word from the FILE and store it in the string.
@@ -766,7 +766,7 @@ extern "C" {
 #endif
 bool m_string_fget_word (m_string_t v, const char separator[], FILE *f);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Put the string in the given FILE without formatting */
@@ -775,7 +775,7 @@ extern "C" {
 #endif
 bool m_string_fputs(FILE *f, const m_string_t v);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 #endif // Have stdio
@@ -786,7 +786,7 @@ extern "C" {
 #endif
 bool m_string_start_with_str_p(const m_string_t v, const char str[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Test if the string starts with the other string */
@@ -795,7 +795,7 @@ extern "C" {
 #endif
 bool m_string_start_with_string_p(const m_string_t v, const m_string_t v2);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Test if the string ends with the C string */
@@ -804,7 +804,7 @@ extern "C" {
 #endif
 bool m_string_end_with_str_p(const m_string_t v, const char str[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Test if the string ends with the other string */
@@ -813,7 +813,7 @@ extern "C" {
 #endif
 bool m_string_end_with_string_p(const m_string_t v, const m_string_t v2);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Compute a hash for the string */
@@ -822,7 +822,7 @@ extern "C" {
 #endif
 size_t m_string_hash(const m_string_t v);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 // Return true if c is a character from charac
@@ -831,7 +831,7 @@ extern "C" {
 #endif
 bool m_str1ng_strim_char(char c, const char charac[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Remove any characters from charac that are present 
@@ -841,7 +841,7 @@ extern "C" {
 #endif
 void m_string_strim(m_string_t v, const char charac[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Test if the string is equal to the OOR value */
@@ -850,7 +850,7 @@ extern "C" {
 #endif
 bool m_string_oor_equal_p(const m_string_t s, unsigned char n);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Set the unitialized string to the OOR value */
@@ -859,7 +859,7 @@ extern "C" {
 #endif
 void m_string_oor_set(m_string_t s, unsigned char n);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* I/O */
@@ -875,7 +875,7 @@ extern "C" {
 #endif
 void m_string_get_str(m_string_t v, const m_string_t v2, bool append);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 #if M_USE_STDIO
@@ -887,7 +887,7 @@ extern "C" {
 #endif
 void m_string_out_str(FILE *f, const m_string_t v);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Read the formatted string from the FILE
@@ -898,7 +898,7 @@ extern "C" {
 #endif
 bool m_string_in_str(m_string_t v, FILE *f);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 #endif // Have stdio
@@ -913,7 +913,7 @@ extern "C" {
 #endif
 bool m_string_parse_str(m_string_t v, const char str[], const char **endptr);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Transform the string 'v2' into a formatted string
@@ -925,7 +925,7 @@ extern "C" {
 #endif
 m_serial_return_code_t m_string_out_serial(m_serial_write_t serial, const m_string_t v);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Read the formatted string from the serializer
@@ -937,7 +937,7 @@ extern "C" {
 #endif
 m_serial_return_code_t m_string_in_serial(m_string_t v, m_serial_read_t serial);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* UTF8 character classification:
@@ -978,7 +978,7 @@ extern "C" {
 #endif
 void m_str1ng_utf8_decode(char c, m_str1ng_utf8_state_e *state,                     m_string_unicode_t *unicode);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Check if the given array of characters is a valid UTF8 stream */
@@ -988,7 +988,7 @@ extern "C" {
 #endif
 bool m_str1ng_utf8_valid_str_p(const char str[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Test if the given byte is the start of an UTF8 code point */
@@ -997,7 +997,7 @@ extern "C" {
 #endif
 bool m_str1ng_utf8_start_p(unsigned char val);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Computer the number of unicode code points are encoded in the UTF8 stream */
@@ -1006,7 +1006,7 @@ extern "C" {
 #endif
 size_t m_str1ng_utf8_length(const char str[]);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Encode an unicode code point into an UTF8 stream */
@@ -1015,7 +1015,7 @@ extern "C" {
 #endif
 int m_str1ng_utf8_encode(char buffer[5], m_string_unicode_t u);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Start iteration over the UTF8 encoded unicode code point */
@@ -1024,7 +1024,7 @@ extern "C" {
 #endif
 void m_string_it(m_string_it_t it, const m_string_t str);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Set the iterator to the end of string 
@@ -1035,7 +1035,7 @@ extern "C" {
 #endif
 void m_string_it_end(m_string_it_t it, const m_string_t str);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Set the iterator to the same position than the other one */
@@ -1044,7 +1044,7 @@ extern "C" {
 #endif
 void m_string_it_set(m_string_it_t it, const m_string_it_t itsrc);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Set the iterator to the given position in the string.
@@ -1055,7 +1055,7 @@ extern "C" {
 #endif
 void m_string_it_pos(m_string_it_t it, const m_string_t str, const size_t n);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Return the current offset in the string referenced by the iterator.
@@ -1066,7 +1066,7 @@ extern "C" {
 #endif
 size_t m_string_it_get_pos(m_string_it_t it);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Test if the iterator has reached the end of the string. */
@@ -1075,7 +1075,7 @@ extern "C" {
 #endif
 bool m_string_end_p (m_string_it_t it);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Test if the iterator is equal to the other one */
@@ -1084,7 +1084,7 @@ extern "C" {
 #endif
 bool m_string_it_equal_p(const m_string_it_t it1, const m_string_it_t it2);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Advance the iterator to the next UTF8 unicode code point */
@@ -1093,7 +1093,7 @@ extern "C" {
 #endif
 void m_string_next (m_string_it_t it);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Move the iterator to the previous code point */
@@ -1102,7 +1102,7 @@ extern "C" {
 #endif
 void m_string_previous(m_string_it_t it);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Return the unicode code point associated to the iterator */
@@ -1111,7 +1111,7 @@ extern "C" {
 #endif
 m_string_unicode_t m_string_get_cref (const m_string_it_t it);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Return the unicode code point associated to the iterator */
@@ -1120,7 +1120,7 @@ extern "C" {
 #endif
 const m_string_unicode_t * m_string_cref (m_string_it_t it);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Push unicode code point into string, encoding it in UTF8 */
@@ -1129,7 +1129,7 @@ extern "C" {
 #endif
 void m_string_push_u (m_string_t str, m_string_unicode_t u);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Compute the length in UTF8 code points in the string */
@@ -1138,7 +1138,7 @@ extern "C" {
 #endif
 size_t m_string_length_u(m_string_t str);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 /* Check if a string is a valid UTF8 encoded stream */
@@ -1147,7 +1147,7 @@ extern "C" {
 #endif
 bool m_string_utf8_p(m_string_t str);
 #ifdef __cplusplus
-} 
+}
 #endif
 
 

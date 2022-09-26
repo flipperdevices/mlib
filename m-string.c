@@ -7,6 +7,7 @@
 #undef m_string_equal_p
 #undef m_string_strcoll
 #undef m_string_search
+
 bool m_str1ng_stack_p(const m_string_t s){
   // Function can be called when contract is not fulfilled
   return (s->ptr == NULL);
